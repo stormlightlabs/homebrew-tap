@@ -3,7 +3,7 @@ cask "storm" do
   name "storm"
   desc "A changelog manager with TUIs for review and release"
   homepage "https://github.com/stormlightlabs/git-storm"
-  version "0.1.3"
+  version "0.1.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -19,12 +19,12 @@ cask "storm" do
     on_intel do
       url "https://github.com/stormlightlabs/git-storm/releases/download/v#{version}/git-storm_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/stormlightlabs/git-storm/"
-      sha256 "38d499784e1cda82d0e23bd92c13f1738c7f21455d147ea5fb3a50aebdb5010c"
+      sha256 "9bfc5942f6c2c21972f9b295bf945ca85a3f447c44877134751bb551ff7cf14c"
     end
     on_arm do
       url "https://github.com/stormlightlabs/git-storm/releases/download/v#{version}/git-storm_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/stormlightlabs/git-storm/"
-      sha256 "c409d7b6d758b50c5acb04e15e1e7b27197666abceed7fd7d7fcfdfffccb1f44"
+      sha256 "b446abec18c2009a0bd125af98fc6504567cfe81a1c6187c1d4fffd901f40c05"
     end
   end
 
@@ -32,12 +32,12 @@ cask "storm" do
     on_intel do
       url "https://github.com/stormlightlabs/git-storm/releases/download/v#{version}/git-storm_#{version}_linux_amd64.tar.gz",
         verified: "github.com/stormlightlabs/git-storm/"
-      sha256 "e515028aa49c2e62e0b2e6dd131fbc4e5f448f38669d4ff07b50578fb7f57b6b"
+      sha256 "cb706187b3b63a7a10f3d1d3ca4c349eeb2e1d2506fce20788d863b249285137"
     end
     on_arm do
       url "https://github.com/stormlightlabs/git-storm/releases/download/v#{version}/git-storm_#{version}_linux_arm64.tar.gz",
         verified: "github.com/stormlightlabs/git-storm/"
-      sha256 "c57a826d1f1ed9ec0b6bf9798201b06758fc1786081148b00e355f94e2d7131d"
+      sha256 "3562b601333ba60ca484d1135c884a77b00649b441a915067fb8991a2978ff75"
     end
   end
 
