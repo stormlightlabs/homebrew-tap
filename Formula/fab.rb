@@ -1,14 +1,14 @@
 class Fab < Formula
   desc "A software factory that takes tasks to reviewed pull requests"
   homepage "https://github.com/stormlightlabs/fabrial"
-  version "0.8.0"
+  version "0.9.1"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/stormlightlabs/fabrial/releases/download/v0.8.0/fab-cli-aarch64-apple-darwin.tar.xz"
-    sha256 "bd8c707af7c6088c1afdf57ff5b9e9f1c4f4830d0dabf1432c4b5ebaced33fe0"
+    url "https://github.com/stormlightlabs/fabrial/releases/download/v0.9.1/fab-cli-aarch64-apple-darwin.tar.xz"
+    sha256 "af096b23238b217b1c5a5274f16af164632bc7a45fbce39ce2f3d86191851be7"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/stormlightlabs/fabrial/releases/download/v0.8.0/fab-cli-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "81cf21ffd2140482a4ea315e60ca34ead891c18e9aa65e7f05daf7fda2404498"
+    url "https://github.com/stormlightlabs/fabrial/releases/download/v0.9.1/fab-cli-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "6472cf6f53b655aafdd09d08e0bda4e2606d2519a21afae34f9caee88e67bf97"
   end
 
   BINARY_ALIASES = {
