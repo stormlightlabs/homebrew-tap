@@ -1,27 +1,28 @@
 class Arcl < Formula
   desc "Local-first project planning for developers and their agents"
   homepage "https://github.com/stormlightlabs/arclightning"
-  version "0.3.0"
+  version "0.4.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/stormlightlabs/arclightning/releases/download/v0.3.0/arcl-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "7cf3c94e04bac6c9dff4fd357fc8133050fe0dbbca9d4d1dab2e4ecd8c5e13c3"
+      url "https://github.com/stormlightlabs/arclightning/releases/download/v0.4.1/arcl-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "6e75955869641c8bff0502d7cfe6c32af264ef1a5b1ee9afe62d7817856c9283"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stormlightlabs/arclightning/releases/download/v0.3.0/arcl-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "345fc9405dda66372df32188592d9c920f4989353e1cd8df7b30b2be7de39efc"
+      url "https://github.com/stormlightlabs/arclightning/releases/download/v0.4.1/arcl-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "f6d2477f14a5505c9c69f5a98b9b8195bd815e3f66410fe7fd04f468f091b553"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stormlightlabs/arclightning/releases/download/v0.3.0/arcl-cli-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "2b8d006f1a5a61bfd181c4169c71c14c1060ee468118c2bf9fcad9bee43dca54"
+      url "https://github.com/stormlightlabs/arclightning/releases/download/v0.4.1/arcl-cli-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "a5d403570dd2b4ec17a6224ea703fa70eed946af2db0de8a876f6cad5a3a0517"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stormlightlabs/arclightning/releases/download/v0.3.0/arcl-cli-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "80f6bc7e4ce41f7037c91330c814d94e277aed381d192960d00a130a859675e3"
+      url "https://github.com/stormlightlabs/arclightning/releases/download/v0.4.1/arcl-cli-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "a3ea989366e37376742f7e64e252f0e198f0a11f689be95761d4ca4c0d37f546"
     end
   end
+  license "Apache-2.0"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":               {},
